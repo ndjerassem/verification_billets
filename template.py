@@ -136,8 +136,8 @@ st.markdown("<br><br><br>", unsafe_allow_html=True)
 #Charger le model et le scaler
 @st.cache_resource
 def charger_model_et_scaler():
-    model = pickle.load(open("classification_model.pkl", "rb"))
-    scaler = pickle.load(open("scaler_2.pkl", "rb"))
+    model = pickle.load(open("/model/classification_model.pkl", "rb"))
+    scaler = pickle.load(open("/model/scaler_2.pkl", "rb"))
     return model, scaler
 
 #rappel du modele
